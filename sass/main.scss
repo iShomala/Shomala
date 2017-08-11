@@ -1,440 +1,533 @@
-            /*Import Core*/
-            
-            @import "core/reset-min";
-            @import "core/fonts";
-            @import "core/variables";
-            @import "core/mixin";
-            html {
-                font-size: 62.5%;
-            }
-            
-            .container {
-                background-color: $white;
-                display: flex;
-                overflow: auto;
-                flex-direction: column;
-            }
-            
-            .section#home {
-                display: flex;
-                flex-direction: column;
-                height: 100vh;
-                width: 100%;
-                // background-color: $deepblue;
-                background-image: url(../images/selfPortrait3.svg);
-                background-repeat: no-repeat;
-                background-position: center bottom;
-                background-size: 100%;
-                background-color: black;
-                // padding-left: 15rem;
-                // padding-top: 2rem;
-                // padding-right: 15rem;
-                .menu-bar {
-                    // display: flex;
-                    width: full-width;
-                    // justify-content: space-between;
-                    // background-color: black;
-                    // align-items: center;
-                    // height: 8rem;
+                /*Import Core*/
+                
+                @import "core/reset-min";
+                @import "core/fonts";
+                @import "core/variables";
+                @import "core/mixin";
+                html {
+                    font-size: 62.5%;
+                }
+                
+                .container {
+                    background-color: $white;
+                    display: flex;
+                    overflow: auto;
+                    flex-direction: column;
+                }
+                
+                .section#home {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100vh;
+                    width: 100%;
+                    // background-color: $deepblue;
+                    background-image: url(../images/selfPortrait3.svg);
+                    background-repeat: no-repeat;
+                    background-position: center bottom;
+                    background-size: 100%;
+                    background-color: black;
                     // padding-left: 15rem;
                     // padding-top: 2rem;
                     // padding-right: 15rem;
-                }
-                #email {
-                    a {
-                        text-decoration: none;
-                        color: #A6A8AB;
-                        font-size: 2rem;
-                        font-family: 'SF UI Text', Helvetica, sans-serif;
-                        font-weight: 500;
-                        font-style: normal;
+                    .menu-bar {
+                        // display: flex;
+                        width: full-width;
+                        // justify-content: space-between;
+                        // background-color: black;
+                        // align-items: center;
+                        // height: 8rem;
+                        // padding-left: 15rem;
+                        // padding-top: 2rem;
+                        // padding-right: 15rem;
                     }
-                    -webkit-transform: rotate(-90deg);
-                    // -moz-transform: rotate(-90deg);
-                    // -ms-transform: rotate(-90deg);
-                    // -o-transform: rotate(-90deg);
-                    // -spec-transform: rotate(-90deg);
-                    transform: rotate(-90deg);
-                    -ms-transform-origin: 0 0;
-                    -webkit-transform-origin: 0 0;
-                    transform-origin: 0 0;
-                    position: fixed;
-                    top: 50%;
-                    margin-top: 112px;
-                    left: 80px;
-                    z-index: 100;
+                    #email {
+                        a {
+                            text-decoration: none;
+                            color: #A6A8AB;
+                            font-size: 2rem;
+                            font-family: 'SF UI Text', Helvetica, sans-serif;
+                            font-weight: 500;
+                            font-style: normal;
+                        }
+                        -webkit-transform: rotate(-90deg);
+                        // -moz-transform: rotate(-90deg);
+                        // -ms-transform: rotate(-90deg);
+                        // -o-transform: rotate(-90deg);
+                        // -spec-transform: rotate(-90deg);
+                        transform: rotate(-90deg);
+                        -ms-transform-origin: 0 0;
+                        -webkit-transform-origin: 0 0;
+                        transform-origin: 0 0;
+                        position: fixed;
+                        top: 50%;
+                        margin-top: 112px;
+                        left: 80px;
+                        z-index: 100;
+                    }
+                    #socials {
+                        position: absolute;
+                        top: 50%;
+                        -webkit-transform: translate(0, -50%);
+                        -ms-transform: translate(0, -50%);
+                        transform: translate(0, -50%);
+                        z-index: 10;
+                        position: fixed;
+                        right: 80px;
+                        z-index: 100;
+                    }
+                    #socials li {
+                        position: relative;
+                        display: block;
+                        padding: 10px;
+                    }
                 }
-                #socials {
-                    position: absolute;
-                    top: 50%;
-                    -webkit-transform: translate(0, -50%);
-                    -ms-transform: translate(0, -50%);
-                    transform: translate(0, -50%);
-                    z-index: 10;
-                    position: fixed;
-                    right: 80px;
-                    z-index: 100;
-                }
-                #socials li {
-                    position: relative;
-                    display: block;
-                    padding: 10px;
-                }
-            }
-            
-            .header {
-                display: flex;
-                width: full-width;
-                justify-content: center;
-                // background-color: $white;
-                align-items: center;
-                height: 8rem;
-                padding-left: 15rem;
-                padding-top: 1rem;
-                padding-right: 15rem;
-                .logo {
+                
+                .header {
                     display: flex;
-                }
-                .nav-menu {
-                    display: flex;
+                    width: full-width;
+                    justify-content: center;
+                    // background-color: $white;
                     align-items: center;
-                    position: fixed;
-                    ul {
-                        // flex-direction: row;
-                        // padding-left: 1.5rem;
-                        // padding-right: 1.5rem;
-                        list-style: none;
+                    height: 8rem;
+                    padding-left: 15rem;
+                    padding-top: 1rem;
+                    padding-right: 15rem;
+                    .logo {
                         display: flex;
-                        li {
-                            padding-left: 3rem;
-                            padding-right: 3rem;
+                    }
+                    .nav-menu {
+                        display: flex;
+                        align-items: center;
+                        position: fixed;
+                        ul {
+                            // flex-direction: row;
+                            // padding-left: 1.5rem;
+                            // padding-right: 1.5rem;
+                            list-style: none;
                             display: flex;
-                            a {
-                                text-decoration: none;
-                                color: white;
-                                font-size: 1.4rem;
-                                font-family: 'SF UI Text', Helvetica, sans-serif;
-                                font-weight: 500;
-                                font-style: medium;
+                            li {
+                                padding-left: 3rem;
+                                padding-right: 3rem;
+                                display: flex;
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                    font-size: 1.4rem;
+                                    font-family: 'SF UI Text', Helvetica, sans-serif;
+                                    font-weight: 500;
+                                    font-style: medium;
+                                }
                             }
                         }
                     }
                 }
-            }
-            
-            .toggle-nav {
-                display: none;
-            }
-            
-            .main {
-                // margin-left: 17rem;
-                display: flex;
-                height: 60rem;
-                overflow: hidden;
-                position: relative;
-                flex-direction: column;
-                &__smtext {
-                    // display: none;
+                
+                .toggle-nav {
+                    display: none;
                 }
-                // &__CTA {
-                //     // display: flex;
-                // }
-            }
-            
-            .slogan {
-                margin-top: 300px;
-                margin-bottom: 0px;
-                padding-left: 15rem;
-                // padding-right: 15rem;
-                /* CHAT: */
-                font-family: 'SF UI Display', Helvetica, sans-serif;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 8rem;
-                color: $white;
-                letter-spacing: 0.1rem;
-            }
-            
-            .scroll-prompt {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                margin-top: 20px;
-                z-index: 4;
-            }
-            
-            .cta--caption {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                margin-top: 200px;
-                z-index: 4;
-                font-family: 'SF UI Display', Helvetica, sans-serif;
-                font-size: 1.4rem;
-                font-weight: bold;
-                color: whitesmoke;
-            }
-            
-            .cta--button {
-                margin-bottom: 70px;
-                z-index: 4;
-                // .scroll-promt span {
-                //     display: inline-block;
-                //     margin-right: 90px;
-                //     line-height: 1;
-                //     &:last-child {
-                //         margin-right: 0;
-                //     }
-                // }
-            }
-            
-            .section#about {
-                display: flex;
-                flex-direction: column;
-                height: 100vh;
-                width: 100%;
-                background-repeat: no-repeat;
-                background-position: center bottom;
-                background-size: 100%;
-                background-color: black;
-                width: 100%;
-                // height: 32rem;
-                color: white;
-                font-family: 'SF UI Display', Helvetica, sans-serif;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .brief-intro h2 {
-                    font-size: 4.8rem;
-                    line-height: 5.8rem;
-                    font-weight: 300;
+                
+                .main {
+                    // margin-left: 17rem;
+                    display: flex;
+                    height: 60rem;
+                    overflow: hidden;
+                    position: relative;
+                    flex-direction: column;
+                    &__smtext {
+                        // display: none;
+                    }
+                    // &__CTA {
+                    //     // display: flex;
+                    // }
+                }
+                
+                .slogan {
+                    margin-top: 300px;
+                    margin-bottom: 0px;
+                    padding-left: 15rem;
+                    // padding-right: 15rem;
+                    /* CHAT: */
+                    font-family: 'SF UI Display', Helvetica, sans-serif;
                     font-style: normal;
+                    font-weight: bold;
+                    font-size: 8rem;
+                    color: $white;
+                    letter-spacing: 0.1rem;
                 }
-                .About {
+                
+                .scroll-prompt {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-top: 20px;
+                    z-index: 4;
+                }
+                
+                .cta--caption {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-top: 200px;
+                    z-index: 4;
+                    font-family: 'SF UI Display', Helvetica, sans-serif;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    color: whitesmoke;
+                }
+                
+                .cta--button {
+                    margin-bottom: 70px;
+                    z-index: 4;
+                    // .scroll-promt span {
+                    //     display: inline-block;
+                    //     margin-right: 90px;
+                    //     line-height: 1;
+                    //     &:last-child {
+                    //         margin-right: 0;
+                    //     }
+                    // }
+                }
+                
+                .section#about {
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
-                    p {
-                        font-size: 2rem;
-                        line-height: 3.1rem;
-                        font-weight: medium;
-                        font-style: normal;
-                        color: #A6A8AB;
-                    }
-                    .extra {
-                        font-size: 1.4rem;
-                        line-height: 2rem;
-                        font-weight: medium;
-                        font-style: medium;
-                        color: #A6A8AB;
-                    }
-                    #glasses {
-                        display: flex;
-                        background-image: url(../images/glasses.svg);
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        z-index: +1;
-                        height: 87px;
-                        width: 100%;
-                        margin-top: 70px;
-                    }
-                }
-            }
-            
-            .section#projects {
-                display: flex;
-                flex-direction: column;
-                height: 100vh;
-                width: 100%;
-                background-repeat: no-repeat;
-                background-position: center bottom;
-                background-size: 100%;
-                background-color: black;
-                width: 100%;
-                // color: white;
-                font-family: 'SF UI Display', Helvetica, sans-serif;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .soon {
+                    height: 100vh;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center bottom;
+                    background-size: 100%;
+                    background-color: black;
+                    width: 100%;
+                    // height: 32rem;
+                    color: white;
+                    font-family: 'SF UI Display', Helvetica, sans-serif;
                     display: flex;
-                    flex-direction: column;
+                    align-items: center;
                     justify-content: center;
-                    margin-top: 50px;
-                    p {
-                        font-size: 6.8rem;
-                        line-height: 3.1rem;
-                        font-weight: bold;
+                    .brief-intro h2 {
+                        font-size: 4.8rem;
+                        line-height: 5.8rem;
+                        font-weight: 300;
                         font-style: normal;
-                        color: red;
                     }
-                    #social--extra {
+                    .About {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        text-align: center;
-                        width: full-width;
-                        margin-top: 50px;
-                        font-size: 2rem;
-                        line-height: 2rem;
-                        font-weight: medium;
-                        font-style: medium;
-                        color: #A6A8AB;
-                    }
-                    #projects {
-                        display: flex;
-                        background-image: url(../images/projects.svg);
-                        background-repeat: no-repeat;
-                        background-position: center bottom;
-                        z-index: +1;
-                        height: 639px;
-                        width: 100%;
-                        margin-top: 150px;
+                        p {
+                            font-size: 2rem;
+                            line-height: 3.1rem;
+                            font-weight: medium;
+                            font-style: normal;
+                            color: #A6A8AB;
+                        }
+                        .extra {
+                            font-size: 1.4rem;
+                            line-height: 2rem;
+                            font-weight: medium;
+                            font-style: medium;
+                            color: #A6A8AB;
+                        }
+                        #glasses {
+                            display: flex;
+                            background-image: url(../images/glasses.svg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            z-index: +1;
+                            height: 87px;
+                            width: 100%;
+                            margin-top: 70px;
+                        }
                     }
                 }
-                //     @media screen and (max-width: 768px) and (min-width: 375px) {
-                //         .section#home {
-                //             .section#home {
-                //                 display: flex;
-                //                 flex-direction: column;
-                //                 height: 100vh;
-                //                 width: 100%;
-                //                 // background-color: $deepblue;
-                //                 background-image: url(../images/selfPortrait3.svg);
-                //                 background-repeat: no-repeat;
-                //                 background-position: center bottom;
-                //                 background-size: 100%;
-                //                 background-color: black;
-                //                 // padding-left: 15rem;
-                //                 // padding-top: 2rem;
-                //                 // padding-right: 15rem;
-                //                 .menu-bar {
-                //                     // display: flex;
-                //                     width: full-width;
-                //                     // justify-content: space-between;
-                //                     // background-color: black;
-                //                     // align-items: center;
-                //                     // height: 8rem;
-                //                     // padding-left: 15rem;
-                //                     // padding-top: 2rem;
-                //                     // padding-right: 15rem;
-                //                 }
-                //                 #email {
-                //                     a {
-                //                         text-decoration: none;
-                //                         color: #A6A8AB;
-                //                         font-size: 2rem;
-                //                         font-family: 'SF UI Text', Helvetica, sans-serif;
-                //                         font-weight: 500;
-                //                         font-style: normal;
-                //                     }
-                //                     -webkit-transform: rotate(-90deg);
-                //                     // -moz-transform: rotate(-90deg);
-                //                     // -ms-transform: rotate(-90deg);
-                //                     // -o-transform: rotate(-90deg);
-                //                     // -spec-transform: rotate(-90deg);
-                //                     transform: rotate(-90deg);
-                //                     -ms-transform-origin: 0 0;
-                //                     -webkit-transform-origin: 0 0;
-                //                     transform-origin: 0 0;
-                //                     position: fixed;
-                //                     top: 50%;
-                //                     margin-top: 112px;
-                //                     left: 80px;
-                //                     z-index: 100;
-                //                 }
-                //                 #socials {
-                //                     position: absolute;
-                //                     top: 50%;
-                //                     -webkit-transform: translate(0, -50%);
-                //                     -ms-transform: translate(0, -50%);
-                //                     transform: translate(0, -50%);
-                //                     z-index: 10;
-                //                     position: fixed;
-                //                     right: 80px;
-                //                     z-index: 100;
-                //                 }
-                //                 #socials li {
-                //                     position: relative;
-                //                     display: block;
-                //                     padding: 10px;
-                //                 }
-                //             }
-                //             .header {
-                //                 display: flex;
-                //                 width: full-width;
-                //                 justify-content: center;
-                //                 // background-color: $white;
-                //                 align-items: center;
-                //                 height: 8rem;
-                //                 padding-left: 15rem;
-                //                 padding-top: 1rem;
-                //                 padding-right: 15rem;
-                //                 .logo {
-                //                     display: flex;
-                //                 }
-                //                 .nav-menu {
-                //                     display: flex;
-                //                     align-items: center;
-                //                     position: fixed;
-                //                     ul {
-                //                         // flex-direction: row;
-                //                         // padding-left: 1.5rem;
-                //                         // padding-right: 1.5rem;
-                //                         list-style: none;
-                //                         display: flex;
-                //                         li {
-                //                             padding-left: 3rem;
-                //                             padding-right: 3rem;
-                //                             display: flex;
-                //                             a {
-                //                                 text-decoration: none;
-                //                                 color: white;
-                //                                 font-size: 1.4rem;
-                //                                 font-family: 'SF UI Text', Helvetica, sans-serif;
-                //                                 font-weight: 500;
-                //                                 font-style: medium;
-                //                             }
-                //                         }
-                //                     }
-                //                 }
-                //             }
-                //             .toggle-nav {
-                //                 display: none;
-                //             }
-                //             ;
-                //         }
-                //     }
-                //     @media screen and (max-width: 768px) and (min-width: 375px) {
-                //         .section#about {
-                //             height: 10.6rem;
-                //             // .brief-intro h2 {
-                //             //     font-size: 2rem;
-                //             //     line-height: 2.3rem;
-                //             //     font-weight: 300;
-                //             //     font-style: normal;
-                //             //     text-align: center;
-                //             // }
-                //             .About {
-                //                 display: flex;
-                //                 flex-direction: column;
-                //                 justify-content: center;
-                //                 p {
-                //                     font-size: 1.2rem;
-                //                     line-height: 3.1rem;
-                //                     font-weight: medium;
-                //                     font-style: normal;
-                //                     color: #A6A8AB;
-                //                 }
-                //                 .extra {
-                //                     font-size: 1rem;
-                //                     line-height: 2rem;
-                //                     font-weight: medium;
-                //                     font-style: medium;
-                //                     color: #A6A8AB;
-                //                 }
-                //             }
-                //         }
-                //     }
-                // }
-            }
+                
+                .section#projects {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100vh;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center bottom;
+                    background-size: 100%;
+                    background-color: black;
+                    width: 100%;
+                    // color: white;
+                    font-family: 'SF UI Display', Helvetica, sans-serif;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .soon {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin-top: 50px;
+                        p {
+                            font-size: 6.8rem;
+                            line-height: 3.1rem;
+                            font-weight: bold;
+                            font-style: normal;
+                            color: red;
+                        }
+                        #social--extra {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                            width: full-width;
+                            margin-top: 50px;
+                            font-size: 2rem;
+                            line-height: 2rem;
+                            font-weight: medium;
+                            font-style: medium;
+                            color: #A6A8AB;
+                        }
+                        #projects {
+                            display: flex;
+                            background-image: url(../images/projects.svg);
+                            background-repeat: no-repeat;
+                            background-position: center bottom;
+                            z-index: +1;
+                            height: 639px;
+                            width: 100%;
+                            margin-top: 150px;
+                        }
+                    }
+                }
+                
+                #emailMobile {
+                    display: none;
+                }
+                
+                #socialsMobile {
+                    display: none;
+                }
+                
+                //   The Path to Responsiveness
+                /* Portrait */
+                
+                @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+                    .section#home {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100vh;
+                        width: 100%;
+                        // background-color: $deepblue;
+                        background-image: url(../images/selfPortraitmobile.svg);
+                        background-repeat: no-repeat;
+                        background-position: center bottom;
+                        background-size: 100%;
+                        background-color: black;
+                        // padding-left: 15rem;
+                        // padding-top: 2rem;
+                        // padding-right: 15rem;
+                        .menu-bar {
+                            // display: flex;
+                            width: full-width;
+                            // justify-content: space-between;
+                            // background-color: black;
+                            // align-items: center;
+                            // height: 8rem;
+                            // padding-left: 15rem;
+                            // padding-top: 2rem;
+                            // padding-right: 15rem;
+                        }
+                        #email {
+                            a {
+                                text-decoration: none;
+                                color: #A6A8AB;
+                                font-size: 1.2rem;
+                                font-family: 'SF UI Text', Helvetica, sans-serif;
+                                font-weight: 500;
+                                font-style: normal;
+                            }
+                            -webkit-transform: rotate(-90deg);
+                            // -moz-transform: rotate(-90deg);
+                            // -ms-transform: rotate(-90deg);
+                            // -o-transform: rotate(-90deg);
+                            // -spec-transform: rotate(-90deg);
+                            transform: rotate(-90deg);
+                            -ms-transform-origin: 0 0;
+                            -webkit-transform-origin: 0 0;
+                            transform-origin: 0 0;
+                            position: absolute;
+                            top: 50%;
+                            margin-top: 112px;
+                            left: 12px;
+                            z-index: 100;
+                        }
+                        #socials {
+                            position: absolute;
+                            top: 50%;
+                            -webkit-transform: translate(0, -50%);
+                            -ms-transform: translate(0, -50%);
+                            transform: translate(0, -50%);
+                            z-index: 10;
+                            // position: fixed;
+                            right: 12px;
+                            z-index: 100;
+                        }
+                        #socials li {
+                            position: relative;
+                            display: block;
+                            padding: 10px;
+                        }
+                    }
+                    .section#about {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100vh;
+                        width: 100%;
+                        background-repeat: no-repeat;
+                        background-position: center bottom;
+                        background-size: 100%;
+                        background-color: black;
+                        width: 100%;
+                        // height: 32rem;
+                        color: white;
+                        font-family: 'SF UI Display', Helvetica, sans-serif;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .About {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            p {
+                                font-size: 1.4rem;
+                                line-height: 2.2rem;
+                                font-weight: medium;
+                                font-style: normal;
+                                color: white;
+                                // margin-top: 112px;
+                                margin-left: 28px;
+                                margin-right: 16px;
+                            }
+                            .extra {
+                                font-size: 1.0rem;
+                                line-height: 1.8rem;
+                                font-weight: medium;
+                                font-style: medium;
+                                color: #A6A8AB;
+                                margin-left: 28px;
+                                margin-right: 16px;
+                            }
+                            #glasses {
+                                display: flex;
+                                background-image: url(../images/glasses.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                z-index: +1;
+                                height: 20px;
+                                width: 100%;
+                                margin-top: 70px;
+                            }
+                            #glasses {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                
+                @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+                    .section#projects {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100vh;
+                        width: 100%;
+                        background-repeat: no-repeat;
+                        background-position: center bottom;
+                        background-size: 100%;
+                        background-color: black;
+                        width: 100%;
+                        // color: white;
+                        font-family: 'SF UI Display', Helvetica, sans-serif;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .soon {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            margin-top: 100px;
+                            p {
+                                font-size: 1.6rem;
+                                line-height: 1.8rem;
+                                font-weight: bold;
+                                font-style: normal;
+                                color: red;
+                                text-align: center;
+                            }
+                            #social--extra {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                text-align: center;
+                                width: full-width;
+                                margin-top: 12px;
+                                font-size: 1.2rem;
+                                line-height: 1.5rem;
+                                font-weight: medium;
+                                font-style: medium;
+                                color: white;
+                            }
+                            #emailMobile {
+                                display: flex;
+                                position: relative;
+                                justify-content: space-around;
+                                margin-top: 20px;
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                    font-size: 1.2rem;
+                                    font-family: 'SF UI Text', Helvetica, sans-serif;
+                                    font-weight: 500;
+                                    font-style: normal;
+                                    margin-top: 30px;
+                                }
+                                // -webkit-transform: rotate(-90deg);
+                                // -moz-transform: rotate(-90deg);
+                                // -ms-transform: rotate(-90deg);
+                                // -o-transform: rotate(-90deg);
+                                // -spec-transform: rotate(-90deg);
+                                // transform: rotate(-90deg);
+                                // -ms-transform-origin: 0 0;
+                                // -webkit-transform-origin: 0 0;
+                                // transform-origin: 0 0;
+                                // position: fixed;
+                                // top: 50%;
+                                // margin-top: 112px;
+                                // left: 12px;
+                                z-index: 100;
+                            }
+                            #socialsMobile {
+                                display: flex;
+                                position: relative;
+                                justify-content: space-around;
+                                margin-top: 10px;
+                                top: 50%;
+                                // -webkit-transform: translate(0, -50%);
+                                // -ms-transform: translate(0, -50%);
+                                // transform: translate(0, -50%);
+                                // z-index: 10;
+                                // position: fixed;
+                                // right: 12px;
+                                z-index: 100;
+                            }
+                            #socialsMobile li {
+                                position: relative;
+                                display: inline-block;
+                                padding: 10px;
+                            }
+                            #projects {
+                                display: flex;
+                                background-image: url(../images/projectsMobile.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                z-index: +1;
+                                // height: 639px;
+                                // width: 100%;
+                                // margin-top: 150px;
+                            }
+                        }
+                    }
+                }
